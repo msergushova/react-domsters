@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
 import Header from './Header';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import Live from './Live';
-import Photos from './Photos';
+import MainContent from './MainContent';
+
 import './../css/basic.css';
 
 
@@ -15,12 +12,8 @@ class App extends Component {
     <div>
       <Header />
       <Navbar />
-      <Home />
-      <About />
-      <Contact />
-      <Live />
-      <Photos />
-  </div>
+      <MainContent />
+    </div>
     );
   }
 }

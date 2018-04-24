@@ -1,16 +1,16 @@
-
-  import React from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom'
   const Navbar = () => {
       return (
-        <div id="navigation">
+        <nav id="navigation">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="photos.html">Photos</a></li>
-          <li><a href="live.html">Live</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      );
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/about'>About</Link></li>
+        <li><Link to='/photos'>Photos</Link></li>
+        <li><Link to='/live'>Live</Link></li>
+        <li><Link to='/contact'>Contact</Link></li>
+      </ul>
+      </nav>
+      )
   }
   export default Navbar;
